@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <!-- css files -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- framewoork [bootstrap] css-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- framewoork [bootstrap] js-->
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="js/cdn.jsdelivr.net_npm_@popperjs_core@2.9.2_dist_umd_popper.min.js"></script>
+    <script src="js/bootstrap.js" defer></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- javascript  -->
+    <script src="js/script.js" defer></script>
+    <!-- framework [vue js] -->
+    <title>Home</title>
+</head>
+<body>
+    <div class="page" id="amer">
+        <div class="content">
+            <header>
+                    <ul class="m-0 p-0 links">
+                        <a href="index.html">
+                            <li class="active position-relative" position="50%" @mouseenter="position = '50%'" @mouseout="position = '50%'">
+                                <span class="hover" :style="{'left': position}"></span>
+                                <i class="fa-solid fa-house"></i>
+                            </li>
+                        </a>
+                        <a href="about.html" position="173%" @mouseenter="position = '173%'" @mouseout="position = '50%'">
+                            <li>
+                                <i class="fa-solid fa-user"></i>
+                            </li>
+                        </a>
+                        <a href="projects.html" position="298%" @mouseenter="position = '298%'" @mouseout="position = '50%'">
+                            <li>
+                                <i class="fa-solid fa-window-maximize"></i>
+                            </li>
+                        </a>
+                        <a href="products.html" position="426%" @mouseenter="position = '426%'" @mouseout="position = '50%'">
+                            <li>
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </li>
+                        </a>
+                    </ul>
+                    <ul class="p-0 m-0 options">
+                        <li><i class="fa-solid fa-sun"></i></li>
+                        <li>
+                            <a href="hire-site.html" class="d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <span>hire me</span>
+                            </a>
+                        </li>
+                    </ul>
+            </header>
+            <div class="main-content">
+                <div class="about">
+                    <div class="headding">
+                        <ul>
+                            <li>Graphic designer from Aleppo, Syria</li>
+                            <li>AVAILABLE FOR WORK</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <div class="info">
+                        <h4>I’m Sedra Do</h4>
+                        <p>
+                            My name is Sidra Al Muntaha
+                            I obtained a diploma in Network Engineering from the University of Aleppo
+                            Informatics engineering student.
+                            
+                            Specializing in Building visual identities and Branding.
+                            
+                            Practicing graphic design for 4 years, in areas ranging from advertising, printing and marketing campaigns.
+                            
+                            And trained in design programs for 2 years.
+                        </p>
+                        <div class="btns">
+                            <a href="#hire-site"><i class="fa-brands fa-galactic-republic"></i> hire me</a>
+                            <a href=""><i class="fa-regular fa-copy"></i> copy email</a>
+                        </div>
+                    </div>
+                    <img src="imgs/about.webp" alt="">
+                </div>
+                <div class="projects">
+                    <ul class="d-flex justify-content-between">
+                        <li>projects</li>
+                        <li class="list-unstyled">
+                            <a href="projects.html">view all</a> <i class="fa-solid fa-arrow-right"></i>
+                        </li>
+                    </ul>
+                    <a href="#project-01">
+                        <div class="project d-flex align-items-center">
+                            <div class="img">
+                                <img src="imgs/project-01.svg" alt="">
+                            </div>
+                            <div class="description d-flex align-items-center justify-content-between w-100">
+                                <div class="info">
+                                        <h4 class="title p-0">title</h4>
+                                        <p class="p-0 m-0">description</p>
+                                </div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="products">
+                    <ul>
+                        <li>products</li>
+                    </ul>
+                    <a href="#product-01">
+                        <div class="product d-flex align-items-center">
+                            <div class="img">
+                                <img src="imgs/product.webp" alt="">
+                            </div>
+                            <div class="description d-flex w-100">
+                                <h3 class="title">title</h3>
+                                <p class="category">category</p>
+                            </div>
+                            <i class="fa-solid fa-location-arrow"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="work text-center">
+                    <h3>Let’s work together.</h3>
+                    <p>Creating user experience and visual appealing design</p>
+                    <div class="btns d-flex justify-content-center">
+                        <a href="hire-site.html"><i class="fa-brands fa-galactic-republic"></i> hire me</a>
+                        <a href=""><i class="fa-regular fa-copy"></i> copy email</a>
+                    </div>
+                </div>
+                <div class="follow d-flex justify-content-between align-items-center">
+                    <ul class="list-unstyled">
+                        <li>follow me</li>
+                    </ul>
+                    <ul class="d-flex list-unstyled">
+                        <li>
+                            <a href="https://instagram.com/sedra.sma?igshid=MWZjMTM2ODFkZg==" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/sedra.malbab?mibextid=ZbWKwL" target="_blank">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <footer class="text-center">
+                    <p>© 2023 Subtle Folio – Framer Template <br>  by Nur Praditya // MorvaLabs</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        let vue = new Vue({
+            el:'#amer',
+            data:{
+                position : '50%'
+            }
+        })
+    </script>
+</body>
+</html>

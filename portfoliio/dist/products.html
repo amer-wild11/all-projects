@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <!-- google fonts -->
+          <!-- css files -->
+          <link rel="stylesheet" href="css/style.css">
+          <link rel="stylesheet" href="css/about.css">
+          <!-- framewoork [bootstrap] css-->
+          <link rel="stylesheet" href="css/bootstrap.css">
+          <!-- framewoork [bootstrap] js-->
+          <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+          <script src="js/cdn.jsdelivr.net_npm_@popperjs_core@2.9.2_dist_umd_popper.min.js"></script>
+          <script src="js/bootstrap.js" defer></script>
+          <!-- fontawesome -->
+          <link rel="stylesheet" href="css/all.min.css">
+          <!-- javascript  -->
+          <script src="js/script.js" defer></script>
+          <!-- framework [vue js] -->
+          <title>About</title>
+     </head>
+     <body>
+          <div class="page" id="amer">
+               <div class="content">
+                    <header>
+                         <ul class="m-0 p-0 links">
+                              <a href="index.html">
+                                   <li class="position-relative" @mouseenter="position = '-326%'" @mouseout="position = '50%'">
+                                        <i class="fa-solid fa-house"></i>
+                                   </li>
+                              </a>
+                              <a href="about.html" class="position-relative" @mouseenter="position = '-202%'" @mouseout="position = '50%'">
+                                   <li>
+                                        <i class="fa-solid fa-user"></i>
+                                   </li>
+                              </a>
+                              <a href="projects.html" @mouseenter="position = '-74%'" @mouseout="position = '50%'">
+                                   <li>
+                                        <i class="fa-solid fa-window-maximize"></i>
+                                   </li>
+                              </a>
+                              <a href="products.html"  class="position-relative" @mouseenter="position = '50%'" @mouseout="position = '50%'">
+                                   <li class="active">
+                                        <span class="hover" :style="{'left': position}"></span>
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                   </li>
+                              </a>
+                         </ul>
+                         <ul class="p-0 m-0 options">
+                              <li><i class="fa-solid fa-sun"></i></li>
+                              <li>
+                                   <a href="hire-site.html" class="d-flex align-items-center gap-2">
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <span>hire me</span>
+                                   </a>
+                              </li>
+                         </ul>
+                    </header>
+                    <div class="main-content">
+                         <div class="about-section">
+                              <div class="about-description">
+                                   <h4>Explore My Products</h4>
+                                   <p>
+                                        Some of the digital products that I worked on as side projects, explore them now
+                                   </p>
+                              </div>
+                         </div>
+                         <div class="products">
+                              <ul>
+                                   <li>products</li>
+                              </ul>
+                              <a href="#product-01">
+                                   <div class="product d-flex align-items-center">
+                                        <div class="img">
+                                             <img src="imgs/product.webp" alt="">
+                                        </div>
+                                        <div class="description d-flex w-100">
+                                             <h3 class="title">title</h3>
+                                             <p class="category">category</p>
+                                        </div>
+                                        <i class="fa-solid fa-location-arrow"></i>
+                                   </div>
+                              </a>
+                         </div>
+                         <div class="work text-center">
+                              <h3>Let’s work together.</h3>
+                              <p>Creating user experience and visual appealing design</p>
+                              <div class="btns d-flex justify-content-center">
+                                   <a href="hire-site.html"><i class="fa-brands fa-galactic-republic"></i> hire me</a>
+                                   <a href=""><i class="fa-regular fa-copy"></i> copy email</a>
+                              </div>
+                         </div>
+                         <div class="follow d-flex justify-content-between align-items-center">
+                              <ul class="list-unstyled">
+                                   <li>follow me</li>
+                              </ul>
+                              <ul class="d-flex list-unstyled">
+                                   <li>
+                                        <a href="https://instagram.com/sedra.sma?igshid=MWZjMTM2ODFkZg==" target="_blank">
+                                             <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a href="https://www.facebook.com/sedra.malbab?mibextid=ZbWKwL" target="_blank">
+                                             <i class="fa-brands fa-facebook"></i>
+                                        </a>
+                                   </li>
+                              </ul>
+                         </div>
+                         <footer class="text-center">
+                              <p>© 2023 Subtle Folio – Framer Template <br>  by Nur Praditya // MorvaLabs</p>
+                         </footer>
+                    </div>
+               </div>
+          </div>
+          <script src="vue.js"></script>
+          <script>
+               let vue = new Vue({
+                    el:'#amer',
+                    data:{
+                         position: '50%',
+                    },
+                    methods : {
+                         linkActive : function(){
+                              console.log(this.position)
+                         }
+                    }
+               })
+          </script>
+     </body>
+</html>

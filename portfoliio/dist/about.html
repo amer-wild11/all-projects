@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <!-- google fonts -->
+          <!-- css files -->
+          <link rel="stylesheet" href="css/style.css">
+          <link rel="stylesheet" href="css/about.css">
+          <!-- framewoork [bootstrap] css-->
+          <link rel="stylesheet" href="css/bootstrap.css">
+          <!-- framewoork [bootstrap] js-->
+          <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+          <script src="js/cdn.jsdelivr.net_npm_@popperjs_core@2.9.2_dist_umd_popper.min.js"></script>
+          <script src="js/bootstrap.js" defer></script>
+          <!-- fontawesome -->
+          <link rel="stylesheet" href="css/all.min.css">
+          <!-- javascript  -->
+          <script src="js/script.js" defer></script>
+          <!-- framework [vue js] -->
+          <title>About</title>
+     </head>
+     <body>
+          <div class="page" id="amer">
+               <div class="content">
+                    <header>
+                         <ul class="m-0 p-0 links">
+                              <a href="index.html">
+                                   <li class="position-relative" @mouseenter="position = '-78%'" @mouseout="position = '50%'">
+                                        <i class="fa-solid fa-house"></i>
+                                   </li>
+                              </a>
+                              <a href="about.html" class="position-relative" @mouseenter="position = '50%'" @mouseout="position = '50%'">
+                                   <li class="active">
+                                        <span class="hover" :style="{'left': position}"></span>
+                                        <i class="fa-solid fa-user"></i>
+                                   </li>
+                              </a>
+                              <a href="projects.html" @mouseenter="position = '174%'" @mouseout="position = '50%'">
+                                   <li>
+                                        <i class="fa-solid fa-window-maximize"></i>
+                                   </li>
+                              </a>
+                              <a href="products.html" @mouseenter="position = '300%'" @mouseout="position = '50%'">
+                                   <li>
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                   </li>
+                              </a>
+                         </ul>
+                         <ul class="p-0 m-0 options">
+                              <li><i class="fa-solid fa-sun"></i></li>
+                              <li>
+                                   <a href="hire-site.html" class="d-flex align-items-center gap-2">
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <span>hire me</span>
+                                   </a>
+                              </li>
+                         </ul>
+                    </header>
+                    <div class="main-content">
+                         <div class="about-section">
+                              <ul class="about-title">
+                                   <li class="list-unstyled">about</li>
+                              </ul>
+                              <div class="about-description">
+                                   <h4>It's Me Sedra <i>Al</i> Mountaha</h4>
+                                   <p>
+                                        Graphic designer from Aleppo, Syria
+
+                                        Welcome to my portfolio
+
+                                        My name is Sedra Al Mountaha
+                                        I obtained a diploma in Network Engineering from the University of Aleppo
+                                        Informatics engineering student.
+
+                                        Specializing in Building visual identities and Branding.
+
+                                        Practicing graphic design for 4 years, in areas ranging from advertising, printing and marketing campaigns.
+
+                                        And trained in design programs for 2 years.
+                                   </p>
+                              </div>
+                              <div class="img">
+                                   <span>img!</span>
+                              </div>
+                              <div class="more-info">
+                                   <h4>More About Me</h4>
+                                   <p>
+                                        Brian Do holds a bachelor's degree in Graphic Design from a prestigious university in the United States and has a relentless drive for staying up-to-date with the latest technologies and design trends. Actively involved in the design community, Brian regularly participates in diverse design conferences and meetups.
+                                        When he's not immersed in design work, he finds solace in playing the guitar and exploring new coffee shops in his local area. Brian firmly believes in maintaining a healthy work-life balance, making sure to take breaks and reenergize his creativity. In his spare time, he also volunteers at a local animal shelter on weekends.
+                                   </p>
+                              </div>
+                              <div class="projects-intro">
+                                   <h4>My Side Projects</h4>
+                                   <p>
+                                        I did passion side projects in the weekend,
+                                        please take a look you will love it (i hope).
+                                   </p>
+                              </div>
+                              <div class="projects">
+                                   <ul class="d-flex justify-content-between">
+                                        <li>projects</li>
+                                        <li class="list-unstyled">
+                                             <a href="projects.html">view all</a> <i class="fa-solid fa-arrow-right"></i>
+                                        </li>
+                                   </ul>
+                                   <a href="#project-01">
+                                        <div class="project d-flex align-items-center">
+                                             <div class="img">
+                                                  <img src="imgs/project-01.svg" alt="">
+                                             </div>
+                                             <div class="description d-flex align-items-center justify-content-between w-100">
+                                                  <div class="info">
+                                                       <h4 class="title p-0">title</h4>
+                                                       <p class="p-0 m-0">description</p>
+                                                  </div>
+                                                  <i class="fa-solid fa-chevron-right"></i>
+                                             </div>
+                                        </div>
+                                   </a>
+                              </div>
+                         </div>
+                         <div class="work text-center">
+                              <h3>Let’s work together.</h3>
+                              <p>Creating user experience and visual appealing design</p>
+                              <div class="btns d-flex justify-content-center">
+                                   <a href="hire-site.html"><i class="fa-brands fa-galactic-republic"></i> hire me</a>
+                                   <button onclick="copy()"><i class="fa-regular fa-copy pr-3"></i> copy email</button>
+                              </div>
+                         </div>
+                         <div class="follow d-flex justify-content-between align-items-center">
+                              <ul class="list-unstyled">
+                                   <li>follow me</li>
+                              </ul>
+                              <ul class="d-flex list-unstyled">
+                                   <li>
+                                        <a href="https://instagram.com/sedra.sma?igshid=MWZjMTM2ODFkZg==" target="_blank">
+                                             <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a href="https://www.facebook.com/sedra.malbab?mibextid=ZbWKwL" target="_blank">
+                                             <i class="fa-brands fa-facebook"></i>
+                                        </a>
+                                   </li>
+                              </ul>
+                         </div>
+                         <footer class="text-center">
+                              <p>© 2023 Subtle Folio – Framer Template <br>  by Nur Praditya // MorvaLabs</p>
+                         </footer>
+                    </div>
+               </div>
+          </div>
+          <script src="js/about.js"></script>
+          <script src="vue.js"></script>
+          <script>
+               let vue = new Vue({
+                    el:'#amer',
+                    data:{
+                         position: '50%',
+                    },
+                    methods : {
+                         linkActive : function(){
+                              console.log(this.position)
+                         }
+                    }
+               })
+          </script>
+     </body>
+</html>

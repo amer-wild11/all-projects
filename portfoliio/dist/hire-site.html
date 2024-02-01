@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <!-- google fonts -->
+          <!-- css files -->
+          <link rel="stylesheet" href="css/style.css">
+          <link rel="stylesheet" href="css/about.css">
+          <!-- framewoork [bootstrap] css-->
+          <link rel="stylesheet" href="css/bootstrap.css">
+          <!-- framewoork [bootstrap] js-->
+          <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+          <script src="js/cdn.jsdelivr.net_npm_@popperjs_core@2.9.2_dist_umd_popper.min.js"></script>
+          <script src="js/bootstrap.js" defer></script>
+          <!-- fontawesome -->
+          <link rel="stylesheet" href="css/all.min.css">
+          <!-- javascript  -->
+          <script src="js/script.js" defer></script>
+          <!-- framework [vue js] -->
+          <title>Hire Me!</title>
+     </head>
+     <body>
+          <div class="page" id="amer">
+               <div class="content">
+                    <header>
+                         <ul class="m-0 p-0 links">
+                              <a href="index.html">
+                                   <li class="position-relative">
+                                        <i class="fa-solid fa-house"></i>
+                                   </li>
+                              </a>
+                              <a href="about.html">
+                                   <li>
+                                        <i class="fa-solid fa-user"></i>
+                                   </li>
+                              </a>
+                              <a href="projects.html">
+                                   <li>
+                                        <i class="fa-solid fa-window-maximize"></i>
+                                   </li>
+                              </a>
+                              <a href="products.html">
+                                   <li>
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                   </li>
+                              </a>
+                         </ul>
+                         <ul class="p-0 m-0 options">
+                              <li><i class="fa-solid fa-sun"></i></li>
+                              <li class="hire-site">
+                                   <a href="hire-site.html" class="d-flex align-items-center gap-2">
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <span>hire me</span>
+                                   </a>
+                              </li>
+                         </ul>
+                    </header>
+                    <div class="main-content hire-section">
+                         <div class="headding">
+                              <ul>
+                                   <li>Hire Me</li>
+                                   <li>AVAILABLE FOR WORK</li>
+                              </ul>
+                         </div>
+                         <div class="hire-description">
+                              <h4>Desi<span>g</span>n Inquiry</h4>
+                              <p>
+                                   Got an idea and need design help? Reach out now
+                              </p>
+                         </div>
+                         <form>
+                              <div class="info">
+                                   <input type="text" class="name" placeholder="Name">
+                                   <input type="email" class="email" placeholder="Email">
+                              </div>
+                              <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                              <button class="w-100">submit inquiry</button>
+                         </form>
+                         <div class="follow d-flex justify-content-between align-items-center">
+                              <ul class="list-unstyled">
+                                   <li>follow me</li>
+                              </ul>
+                              <ul class="d-flex list-unstyled">
+                                   <li>
+                                        <a href="https://instagram.com/sedra.sma?igshid=MWZjMTM2ODFkZg==" target="_blank">
+                                             <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a href="https://www.facebook.com/sedra.malbab?mibextid=ZbWKwL" target="_blank">
+                                             <i class="fa-brands fa-facebook"></i>
+                                        </a>
+                                   </li>
+                              </ul>
+                         </div>
+                         <footer class="text-center">
+                              <p>© 2023 Subtle Folio – Framer Template <br>  by Nur Praditya // MorvaLabs</p>
+                         </footer>
+                    </div>
+               </div>
+          </div>
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+          <script type="text/javascript">
+               emailjs.init('BiGPijmNcEfXzG97o')
+          </script>
+          <script src="vue.js"></script>
+          <script>
+               let vue = new Vue({
+                    el:'#amer',
+                    data:{
+                         position: '50%',
+                    },
+                    methods : {
+                         linkActive : function(){
+                              console.log(this.position)
+                         }
+                    }
+               })
+          </script>
+     </body>
+</html>
